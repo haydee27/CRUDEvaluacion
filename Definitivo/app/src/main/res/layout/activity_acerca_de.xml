@@ -43,14 +43,15 @@
         android:layout_height="210dp"
         android:layout_margin="10dp"
         android:layout_gravity="center"
-        android:src="@drawable/img_2" />
+        android:src="@drawable/img_3" />
 
     <TextView
         android:layout_width="401dp"
         android:layout_height="103dp"
+        android:textColor="@color/black"
         android:text="Estudiante: Bonilla Reyes, Haydee Abigail
-                        N° carnet 153921"
-        android:textAlignment="center"
+                    N° carnet 153921"
+        android:gravity="center"
         android:textSize="20dp" />
 
     <TextView
@@ -58,15 +59,15 @@
         android:layout_height="103dp"
         android:text="Estudiante: Minero Navarrete, Rocio Michell
                     N° carnet 153521"
-        android:textAlignment="center"
+        android:gravity="center"
+        android:textColor="@color/black"
         android:textSize="20dp" />
     <TextView
         android:layout_width="401dp"
         android:layout_height="103dp"
-        android:text="Correo Electronico:
-                                  haydee.bonilla21@itca.edu.sv
-rocio.minero21@itca.edu.sv"
-        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:text="Correo Electronico: haydee.bonilla21@itca.edu.sv,  rocio.minero21@itca.edu.sv"
+        android:gravity="center"
         android:textSize="20dp"
         />
 

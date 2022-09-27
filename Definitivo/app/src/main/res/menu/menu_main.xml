@@ -1,0 +1,35 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.fjar.app_crudsqlite.MainActivity">
+    <item
+        android:id="@+id/action_limpiar"
+        android:orderInCategory="100"
+        android:title="@string/action_settings"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_listaArticulos"
+        android:enabled="true"
+        android:orderInCategory="101"
+        android:title="lista De Articulos"
+         />
+    <item
+        android:id="@+id/action_listaArticulos1"
+        android:enabled="true"
+        android:orderInCategory="102"
+        android:title="lista Articulo1"
+         />
+
+    <item
+        android:id="@+id/action_registros"
+        android:enabled="true"
+        android:orderInCategory="102"
+        android:title="Registros En Base De Datos"
+        />
+    <item
+        android:id="@+id/action_acercade"
+        android:enabled="true"
+        android:orderInCategory="102"
+        android:title="Acerca de"/>
+
+</menu>

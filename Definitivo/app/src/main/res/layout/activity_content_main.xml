@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+app:layout_behavior="@string/appbar_scrolling_view_behavior"
+android:orientation="vertical"
+android:background="@drawable/fondo"
+    >
+<TextView
+    android:id="@+id/tv22"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:textAlignment="center"
+    android:text="Datos del articulo"
+    android:textSize="25dp"
+    />
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="167dp"
+            android:src="@drawable/fondo1"
+            android:layout_margin="10dp"/>
+        <EditText
+            android:id="@+id/et_codigo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="CÓDIGO"
+            android:inputType="number"
+            android:textColor="@color/black"
+            android:drawableStart="@drawable/linecod"
+            android:background="@drawable/estiloespinner"
+            android:shadowDx="-8"
+            android:shadowDy="-9"
+            android:shadowRadius="5"
+            android:paddingLeft="25dp"
+            android:layout_margin="5dp"
+            android:drawablePadding="5dp"
+            />
+
+        <EditText
+            android:id="@+id/et_descripcion"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_margin="5dp"
+            android:hint="DESCRIPCIÓN"
+            android:textColor="@color/black"
+            android:drawableStart="@drawable/edit"
+            android:background="@drawable/estiloespinner"
+            android:inputType="textMultiLine" />
+        <EditText
+            android:id="@+id/et_precio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="PRECIO"
+            android:inputType="numberDecimal"
+            android:textColor="@color/black"
+            android:drawableStart="@drawable/money"
+            android:layout_margin="5dp"
+            android:background="@drawable/estiloespinner"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/red"
+            android:shadowDx="-5"
+            android:shadowDy="-5"
+            android:shadowRadius="5"
+            android:gravity="center"
+            android:drawableStart="@drawable/ic_baseline_add_24"
+            android:text="SELECCIONE UNA CATEGORIA" />
+
+        <Spinner
+            android:id="@+id/tv_opstionCategorias"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textMultiLine"
+            android:textColor="@color/black"
+            android:layout_margin="5dp"
+            android:background="@drawable/estiloespinner"
+            />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:id="@+id/tv_idcategoria"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:text="ID:"
+                android:textColor="#AD0505"
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/tv_nombrecategorias"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Nombre:"
+                android:textColor="#AD0505"
+                android:textSize="18dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="25dp"
+                android:layout_marginTop="25dp"
+                />
+
+            <TextView
+                android:id="@+id/tv_estadocategoria"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Estado:"
+                android:textColor="#AD0505"
+                android:textSize="18dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="50dp"
+                />
+
+        </RelativeLayout>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_guardar"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/buttonshape"
+            android:onClick="alta"
+            android:shadowColor="#A8A8A8"
+            android:shadowDx="-5"
+            android:shadowDy="-5"
+            android:shadowRadius="5"
+            android:text="GUARDAR PRODUCTO"
+
+            android:textSize="15dp"
+            android:gravity="center"
+            android:paddingLeft="5dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginLeft="15dp"
+            android:drawableLeft="@drawable/save"/>
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_consultar1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/buttonshape"
+            android:onClick="consultaporcodigo"
+            android:shadowColor="#A8A8A8"
+            android:shadowDx="-5"
+            android:shadowDy="-5"
+            android:shadowRadius="5"
+            android:text="CONSULTAR POR CÓDIGO"
+            android:textSize="15dp"
+            android:paddingLeft="5dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginLeft="15dp"
+            android:drawableLeft="@drawable/ic_baseline_search_24"
+            />
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_consultar2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/buttonshape"
+            android:onClick="consultapordescripcion"
+            android:shadowColor="#A8A8A8"
+            android:shadowDx="-5"
+            android:shadowDy="-5"
+            android:shadowRadius="5"
+            android:textSize="15dp"
+            android:paddingLeft="5dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginLeft="15dp"
+            android:drawableLeft="@drawable/ic_baseline_search_24"
+            android:text="CONSULTAR POR DESCRIPCIÓN"
+            />
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_eliminar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/buttonshape"
+            android:onClick="bajaporcodigo"
+            android:shadowColor="#A8A8A8"
+            android:shadowDx="-5"
+            android:shadowDy="-5"
+            android:shadowRadius="5"
+            android:textSize="15dp"
+            android:paddingLeft="5dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginLeft="15dp"
+            android:drawableLeft="@drawable/ic_delete"
+            android:text="ELIMINAR PRODUCTO"
+            />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_actualizar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/buttonshape"
+            android:onClick="modificacion"
+            android:shadowColor="#A8A8A8"
+            android:shadowDx="-5"
+            android:shadowDy="-5"
+            android:shadowRadius="5"
+            android:textSize="15dp"
+            android:paddingLeft="5dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginLeft="15dp"
+            android:drawableLeft="@drawable/attributes"
+            android:text="EDITAR REGISTRO"
+            />
+
+
+
+    </LinearLayout>
+</ScrollView>
+</androidx.appcompat.widget.LinearLayoutCompat>

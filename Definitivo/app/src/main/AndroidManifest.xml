@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.habr.crudsqlite">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.CrudSQLite"
+        tools:targetApi="31">
+        <activity
+            android:name=".detalles_categoria"
+
+            android:exported="false" />
+        <activity
+            android:name=".list_view_categorias"
+            android:label=".list_view_Categorias"
+            android:parentActivityName=".MainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Acerca_de"
+            android:label=".Acerca_de"
+            android:parentActivityName=".MainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".list_view_articulos"
+            android:label=".list_view_articulod"
+            android:parentActivityName=".MainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".detalles_articulos"
+            android:label=".detalles_articulos"
+            android:parentActivityName=".list_view_articulos"
+            android:exported="false" />
+        <activity
+            android:name=".consulta_spinner"
+            android:label=".consulta_sppiner"
+            android:parentActivityName=".MainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ventana1"
+            android:exported="false" />
+        <activity
+            android:name=".content_main"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.App_CRUDSQLite.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
